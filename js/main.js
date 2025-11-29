@@ -38,20 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // FAQ Accordion Enhancement
-  const faqItems = document.querySelectorAll('details');
-  faqItems.forEach((item, index) => {
-    item.addEventListener('toggle', function() {
-      // Close other details when one is opened
-      if (this.open) {
-        faqItems.forEach((otherItem, otherIndex) => {
-          if (otherIndex !== index) {
-            otherItem.open = false;
-          }
-        });
-      }
-    });
-  });
+  // FAQ Accordion is handled by accordion.js
 
   // Header Scroll Effects
   const header = document.querySelector('header');

@@ -99,20 +99,30 @@ html, body {
     background: #D9F99D;
 }
 
+.accordion-header span:last-child {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
 .accordion-item.active .accordion-header {
     background: #D9F99D;
     border-bottom: 3px solid #000;
 }
 
+.accordion-item.active .accordion-header span:last-child {
+    transform: rotate(45deg);
+}
+
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease;
     padding: 0 20px;
+    background: #fff;
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 300px;
+    max-height: 600px;
     padding: 20px;
 }
 
