@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coach Lee - ระบบเก็บข้อมูลการกินอัตโนมัติ</title>
 
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ระบบ Automation ช่วยเก็บข้อมูลการกินและสรุปผลให้ลูกเทรนอัตโนมัติ ประหยัดเวลาวันละ 2 ชั่วโมง ให้คุณดูแลลูกค้า 50 คนได้โดยไม่ต้องจ้างแอดมินเพิ่ม">
+    <meta name="keywords" content="Coach Lee, โค้ชออนไลน์, ระบบเทรนเนอร์, AI nutrition tracking, เก็บข้อมูลการกิน, โปรแกรมลดน้ำหนัก, fitness coach, personal trainer">
+    <meta name="author" content="Coach Lee - SMEBRO">
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smebro.com/">
+    <meta property="og:title" content="Coach Lee - ผู้ช่วย AI ส่วนตัวสำหรับเทรนเนอร์">
+    <meta property="og:description" content="ระบบ Automation ช่วยเก็บข้อมูลการกินและสรุปผลให้ลูกเทรนอัตโนมัติ ประหยัดเวลาวันละ 2 ชั่วโมง">
+    <meta property="og:image" content="https://smebro.com/assets/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="th_TH">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Coach Lee - ผู้ช่วย AI ส่วนตัวสำหรับเทรนเนอร์">
+    <meta name="twitter:description" content="ระบบ Automation ช่วยเก็บข้อมูลการกินและสรุปผลให้ลูกเทรนอัตโนมัติ">
+    <meta name="twitter:image" content="https://smebro.com/assets/og-cover.jpg">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -32,10 +53,18 @@
                     🏋️ Coach Lee
                 </div>
 
-                <!-- CTA Button -->
-                <a href="https://www.facebook.com/profile.php?id=61583196487640" target="_blank" class="cta-button text-sm sm:text-base">
-                    ทักมาปรึกษาฟรีๆ
-                </a>
+                <!-- Right Side: Language Toggle + CTA -->
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <!-- Language Toggle Button -->
+                    <button id="languageToggle" class="bg-lime-100 border-2 border-black px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold text-xs sm:text-sm hover:bg-lime-200 transition-all flex items-center gap-2">
+                        <span id="currentLang">🇹🇭 TH</span>
+                    </button>
+
+                    <!-- CTA Button -->
+                    <a href="https://www.facebook.com/profile.php?id=61583196487640" target="_blank" class="cta-button text-sm sm:text-base" data-i18n="nav-cta">
+                        ทักมาปรึกษาฟรีๆ
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -53,11 +82,11 @@
             <!-- Hero Headline -->
             <div class="text-center mb-12" data-aos="fade-up">
                 <h1 class="section-title text-black leading-tight mb-6">
-                    ให้ Coach Lee ทำงานแอดมินให้<br/>
-                    <span class="lime-neon px-4 py-2 rounded-2xl inline-block mt-2">แล้วเราเอาเวลาไปใช้ชีวิตกันเถอะ</span>
+                    <span data-i18n="hero-title-1">ลดเวลางานแอดมิน วันละ 2 ชั่วโมง </span><br/>
+                    <span class="lime-neon px-4 py-2 rounded-2xl inline-block mt-2" data-i18n="hero-title-2">ให้คุณดูแลลูกค้า 50 คนได้ โดยไม่ต้องจ้างแอดมินเพิ่ม</span>
                 </h1>
 
-                <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
+                <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8" data-i18n="hero-subtitle">
                     ระบบโค้ชลี คือระบบเก็บข้อมูลการกินของลูกเทรนด์เพียงแค่ลูกเทรนส่งรูปอาหาร ระบบจะเก็บ Data ลง Google Sheets พร้อมสร้าง Dashboard สรุปข้อมูลโภชนาการทีลูกเทรนทานอัตโนมัติ พร้อมทั้งช่วยลูกเทรนด์นับแคลอรี่ที่กินในแต่ละวันว่า ทานอาหาร ครบแล้ว หรือ ขาด ไปอีกเท่าไหร่
                 </p>
             </div>
@@ -108,11 +137,11 @@
                                 <p class="font-bold text-gray-600 mb-1">Students</p>
                                 <div class="space-y-1">
                                     <div class="flex justify-between items-center bg-gray-100 p-1 rounded text-xs">
-                                        <span>สมชาย</span>
+                                        <span data-i18n="mockup-student-1">สมชาย</span>
                                         <span class="text-green-600 font-bold">✓</span>
                                     </div>
                                     <div class="flex justify-between items-center bg-gray-100 p-1 rounded text-xs">
-                                        <span>นัฐชา</span>
+                                        <span data-i18n="mockup-student-2">นัฐชา</span>
                                         <span class="text-green-600 font-bold">✓</span>
                                     </div>
                                 </div>
@@ -187,7 +216,7 @@
     <!-- ============================================ -->
     <section class="py-20 sm:py-32 border-t-2 border-b-2 border-gray-300" style="background-color: rgba(255, 255, 255, 0.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-black mb-16">
+            <h2 class="section-title text-black mb-16" data-i18n="problem-title">
                 เป็นเทรนเนอร์มันเหนื่อยใช่ไหม
             </h2>
 
@@ -195,24 +224,24 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
                 <div class="bento-box border-lime-300 shadow-[4px_4px_0px_0px_rgba(217,249,157,0.5)] bg-gradient-to-br from-lime-50 to-transparent" data-aos="fade-up" data-aos-delay="0">
-                    <h3 class="text-lime-700 mb-3">😫 หมดวันไปกับการ "กรอกข้อมูล"</h3>
-                    <p class="text-gray-700">
+                    <h3 class="text-lime-700 mb-3" data-i18n="problem-1-title">😫 หมดวันไปกับการ "กรอกข้อมูล"</h3>
+                    <p class="text-gray-700" data-i18n="problem-1-desc">
                         แทนที่จะเอาเวลาไปปั้นหุ่นลูกค้า กลับต้องมานั่ง Copy ข้อมูลจากไลน์ ลงตารางทีละคน... วันละ 2 ชั่วโมง!
                     </p>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="bento-box border-lime-300 shadow-[4px_4px_0px_0px_rgba(217,249,157,0.5)] bg-gradient-to-br from-lime-50 to-transparent" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-lime-700 mb-3">⏰ แชทไหล... ข้อมูลหาย</h3>
-                    <p class="text-gray-700">
+                    <h3 class="text-lime-700 mb-3" data-i18n="problem-2-title">⏰ แชทไหล... ข้อมูลหาย</h3>
+                    <p class="text-gray-700" data-i18n="problem-2-desc">
                         ลูกค้าส่งรูปอาหารมาปนกับคุยเล่น จะย้อนดูประวัติการกินทีต้องไถแชทจนนิ้วล็อค วิเคราะห์ผลลำบาก
                     </p>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bento-box border-lime-300 shadow-[4px_4px_0px_0px_rgba(217,249,157,0.5)] bg-gradient-to-br from-lime-50 to-transparent" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-lime-700 mb-3">😔 อยากรับลูกค้าเพิ่ม... แต่ไหวแค่นี้</h3>
-                    <p class="text-gray-700">
+                    <h3 class="text-lime-700 mb-3" data-i18n="problem-3-title">😔 อยากรับลูกค้าเพิ่ม... แต่ไหวแค่นี้</h3>
+                    <p class="text-gray-700" data-i18n="problem-3-desc">
                         พอรับเยอะก็ดูแลไม่ทั่วถึง ตอบช้า ลืมตรวจการบ้าน สุดท้ายลูกค้าเก่าไม่ต่อสัญญา ลูกค้าใหม่ก็ไม่กล้ารับ
                     </p>
                 </div>
@@ -225,25 +254,25 @@
     <!-- ============================================ -->
     <section class="py-20 sm:py-32" style="background-color: rgba(248, 250, 252, 0.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-black mb-20">
+            <h2 class="section-title text-black mb-20" data-i18n="how-title">
                 3 Step ง่ายๆ ไม่ต้องโหลดแอป
             </h2>
 
             <!-- Step 1: Text Left / Image Right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                 <div>
-                    <div class="inline-block lime-neon px-6 py-2 rounded-full font-bold text-sm border-2 border-black mb-6">
+                    <div class="inline-block lime-neon px-6 py-2 rounded-full font-bold text-sm border-2 border-black mb-6" data-i18n="step-1-badge">
                         ขั้นที่ 1
                     </div>
-                    <h3 class="text-3xl font-bold text-black mb-6">
+                    <h3 class="text-3xl font-bold text-black mb-6" data-i18n="step-1-title">
                         ลูกเทรนถ่ายรูปอาหาร<br/>ส่งไลน์
                     </h3>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6" data-i18n="step-1-desc">
                         ลูกเทรนของคุณเพียงแค่ส่งรูปอาหารที่กินในแต่ละมื้อให้กับ Coach Lee Bot ผ่านแอปพลิเคชัน LINE ได้เลย ไม่มีความซับซ้อน ไม่ต้องโหลดแอปใหม่
                     </p>
                     <div class="flex gap-4">
-                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black">LINE</span>
-                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black">รูปภาพ</span>
+                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black" data-i18n="step-1-tag-1">LINE</span>
+                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black" data-i18n="step-1-tag-2">รูปภาพ</span>
                     </div>
                 </div>
 
@@ -257,8 +286,8 @@
                             </div>
                             <div class="flex-1 flex flex-col items-center justify-center p-6 text-center">
                                 <div class="text-5xl mb-4">📸</div>
-                                <p class="text-sm font-bold text-gray-700 mb-2">ส่งรูปอาหาร</p>
-                                <p class="text-xs text-gray-500">ให้ Coach Lee Bot</p>
+                                <p class="text-sm font-bold text-gray-700 mb-2" data-i18n="infographic-send-food">ส่งรูปอาหาร</p>
+                                <p class="text-xs text-gray-500" data-i18n="infographic-to-bot">ให้ Coach Lee Bot</p>
                             </div>
                         </div>
                     </div>
@@ -296,18 +325,18 @@
                 </div>
 
                 <div class="order-1 lg:order-2">
-                    <div class="inline-block lime-neon px-6 py-2 rounded-full font-bold text-sm border-2 border-black mb-6">
+                    <div class="inline-block lime-neon px-6 py-2 rounded-full font-bold text-sm border-2 border-black mb-6" data-i18n="step-2-badge">
                         ขั้นที่ 2
                     </div>
-                    <h3 class="text-3xl font-bold text-black mb-6">
+                    <h3 class="text-3xl font-bold text-black mb-6" data-i18n="step-2-title">
                         AI คำนวณแคลอรี่<br/>ติดตามการกิน
                     </h3>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6" data-i18n="step-2-desc">
                         ระบบ AI ของเราจะวิเคราะห์รูปภาพอาหารและคำนวณแคลอรี่ รวมถึง macronutrients (โปรตีน ไขมัน คาร์บ) โดยอัตโนมัติ แล้วส่งผลลัพธ์กลับไปให้ลูกเทรนของคุณทราบทันที
                     </p>
                     <div class="flex gap-4">
-                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black">อัตโนมัติ</span>
-                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black">ถูกต้อง</span>
+                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black" data-i18n="step-2-tag-1">อัตโนมัติ</span>
+                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black" data-i18n="step-2-tag-2">ถูกต้อง</span>
                     </div>
                 </div>
             </div>
@@ -315,18 +344,18 @@
             <!-- Step 3: Text Left / Image Right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <div class="inline-block lime-neon px-6 py-2 rounded-full font-bold text-sm border-2 border-black mb-6">
+                    <div class="inline-block lime-neon px-6 py-2 rounded-full font-bold text-sm border-2 border-black mb-6" data-i18n="step-3-badge">
                         ขั้นที่ 3
                     </div>
-                    <h3 class="text-3xl font-bold text-black mb-6">
+                    <h3 class="text-3xl font-bold text-black mb-6" data-i18n="step-3-title">
                         Dashboard สรุป<br/>ความก้าวหน้า
                     </h3>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6" data-i18n="step-3-desc">
                         ข้อมูลทั้งหมดจะถูกบันทึกลงใน Google Sheets โดยอัตโนมัติ และระบบจะสร้าง Dashboard ที่แสดงข้อมูลรวม เช่น การกินของลูกเทรนด์ทั้งสัปดาห์ เทียบกับเป้าหมายเพื่อให้คุณ Coach สามารถวิเคราะห์ว่าลูกเทรนด์ต้องปรับอะไรบ้าง
                     </p>
                     <div class="flex gap-4">
-                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black">Dashboard</span>
-                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black">Insights</span>
+                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black" data-i18n="step-3-tag-1">Dashboard</span>
+                        <span class="inline-block lime-neon px-4 py-2 rounded-lg font-bold border-2 border-black" data-i18n="step-3-tag-2">Insights</span>
                     </div>
                 </div>
 
@@ -371,11 +400,11 @@
                                 <p class="font-bold text-gray-600 mb-1">Students Today</p>
                                 <div class="space-y-1">
                                     <div class="flex justify-between items-center bg-green-50 p-1.5 rounded border border-green-200">
-                                        <span class="font-bold text-gray-700">สมชาย</span>
+                                        <span class="font-bold text-gray-700" data-i18n="mockup-student-1">สมชาย</span>
                                         <span class="text-green-600 font-bold text-lg">✓</span>
                                     </div>
                                     <div class="flex justify-between items-center bg-green-50 p-1.5 rounded border border-green-200">
-                                        <span class="font-bold text-gray-700">นัฐชา</span>
+                                        <span class="font-bold text-gray-700" data-i18n="mockup-student-2">นัฐชา</span>
                                         <span class="text-green-600 font-bold text-lg">✓</span>
                                     </div>
                                 </div>
@@ -394,13 +423,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="mb-20 text-center">
-                <h2 class="section-title text-black mb-6">
+                <h2 class="section-title text-black mb-6" data-i18n="trust-title">
                     กลัวลูกเทรนไม่อิน... เพราะใช้ AI?
                 </h2>
-                <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed" data-i18n="trust-subtitle">
                      ผมเข้าใจความกังวลนี้ดีครับ และผมก็เชื่อว่าเราไม่ควรทำ Automation ไปกับทุกงาน โดยเฉพาะงานที่ต้องมีความสัมพันธ์ที่ดีกับลูกค้า ผมเลยทำCoach Lee มาเพื่อ Automate งานที่เราต้องทำซ้ำๆอย่างการTracking และ เก็บข้อมูลโภชนาการ เพื่อให้คุณเอาเวลาทำงานเหล่านี้ ไปใช้สร้าง <span class="font-bold text-lime-600">'ความสัมพันธ์'</span> กับลูกค้าจริงๆแทน
 
-                      
+
                 </p>
             </div>
 
@@ -408,28 +437,28 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
                 <!-- Old Way Card -->
                 <div class="p-8 border-4 border-gray-300 rounded-3xl bg-gray-100 opacity-75">
-                    <div class="inline-block bg-red-400 text-white px-4 py-2 rounded-lg font-bold text-sm mb-6 border-2 border-red-600">
+                    <div class="inline-block bg-red-400 text-white px-4 py-2 rounded-lg font-bold text-sm mb-6 border-2 border-red-600" data-i18n="old-way">
                         ❌ แบบเก่า (ไม่มีระบบ)
                     </div>
-                    <h3 class="text-3xl font-bold text-gray-700 mb-8">
+                    <h3 class="text-3xl font-bold text-gray-700 mb-8" data-i18n="old-way-title">
                         โค้ชสายกรรมกร
                     </h3>
                     <ul class="space-y-4">
                         <li class="flex gap-4">
                             <span class="text-2xl">😫</span>
-                            <span class="text-gray-700 leading-relaxed">
+                            <span class="text-gray-700 leading-relaxed" data-i18n="old-way-bullet-1">
                                 หมดเวลาไปกับการทวงรูป จ้องตาแตกกับ Excel
                             </span>
                         </li>
                         <li class="flex gap-4">
                             <span class="text-2xl">⏰</span>
-                            <span class="text-gray-700 leading-relaxed">
+                            <span class="text-gray-700 leading-relaxed" data-i18n="old-way-bullet-2">
                                 ตอบไลน์ลูกค้าสั้นๆ "ครับ/เคครับ" เพราะรีบ
                             </span>
                         </li>
                         <li class="flex gap-4">
                             <span class="text-2xl">😔</span>
-                            <span class="text-gray-700 leading-relaxed font-bold">
+                            <span class="text-gray-700 leading-relaxed font-bold" data-i18n="old-way-bullet-3">
                                 Result: ลูกค้ารู้สึกห่างเหิน เพราะคุยกันแต่เรื่องงาน
                             </span>
                         </li>
@@ -438,28 +467,28 @@
 
                 <!-- New Way Card -->
                 <div class="p-8 border-4 border-lime-400 rounded-3xl bg-lime-50 shadow-[8px_8px_0px_0px_rgba(217,249,157,0.5)]">
-                    <div class="inline-block lime-neon text-black px-4 py-2 rounded-lg font-bold text-sm mb-6 border-2 border-black">
+                    <div class="inline-block lime-neon text-black px-4 py-2 rounded-lg font-bold text-sm mb-6 border-2 border-black" data-i18n="new-way">
                         ✅ แบบใหม่ (ใช้ Coach Lee)
                     </div>
-                    <h3 class="text-3xl font-bold text-black mb-8">
+                    <h3 class="text-3xl font-bold text-black mb-8" data-i18n="new-way-title">
                         โค้ชที่ปรึกษา (ตัวจริง)
                     </h3>
                     <ul class="space-y-4">
                         <li class="flex gap-4">
                             <span class="text-2xl">⚡</span>
-                            <span class="text-gray-800 leading-relaxed font-bold">
+                            <span class="text-gray-800 leading-relaxed font-bold" data-i18n="new-way-bullet-1">
                                 งานตัวเลขให้บอททำ จบใน 1 วิ
                             </span>
                         </li>
                         <li class="flex gap-4">
                             <span class="text-2xl">🧑‍🤝‍🧑</span>
-                            <span class="text-gray-800 leading-relaxed font-bold">
+                            <span class="text-gray-800 leading-relaxed font-bold" data-i18n="new-way-bullet-2">
                                 เอาเวลาไปไปสร้างคอมมิวนิตี้เพื่อสร้างความสัมพันธ์ที่ดีกับลูกเทรน
                             </span>
                         </li>
                         <li class="flex gap-4">
                             <span class="text-2xl">❤️</span>
-                            <span class="text-gray-800 leading-relaxed font-bold">
+                            <span class="text-gray-800 leading-relaxed font-bold" data-i18n="new-way-bullet-3">
                                 Result: ลูกค้ารักกว่าเดิม เพราะคุณใส่ใจถูกจังหวะ
                             </span>
                         </li>
@@ -476,20 +505,20 @@
     <!-- ============================================ -->
     <section class="py-20 sm:py-32 border-t-2 border-gray-300" style="background-color: rgba(255, 255, 255, 0.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-black mb-16">
+            <h2 class="section-title text-black mb-16" data-i18n="features-title">
                 ทำไมต้อง Coach Lee
             </h2>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <!-- Box 1: Buy Time -->
                 <div class="bento-box border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] p-6 rounded-2xl bg-white h-full flex flex-col justify-between hover:-translate-y-1 transition-all duration-200" data-aos="fade-up">
-                    
+
                     <div>
-                        <h3 class="font-kanit font-bold text-2xl mb-3">ซื้อ "เวลาชีวิต" คืนมา</h3>
-                        <p class="font-kanit text-gray-600 font-light mb-4">
+                        <h3 class="font-kanit font-bold text-2xl mb-3" data-i18n="feature-1-title">ซื้อ "เวลาชีวิต" คืนมา</h3>
+                        <p class="font-kanit text-gray-600 font-light mb-4" data-i18n="feature-1-desc-1">
                             เราซื้ออดีตไม่ได้... แต่เราซื้ออนาคตได้ครับ ให้ระบบทำงานซ้ำซากแทนคุณ เพื่อให้คุณมีเวลาไปโฟกัสสิ่งที่สำคัญจริงๆ
                         </p>
-                        <p class="font-kanit text-gray-600 font-light">
+                        <p class="font-kanit text-gray-600 font-light" data-i18n="feature-1-desc-2">
                             💡 ลองคำนวณดูเล่นๆ นะครับ...<br>
                             ประหยัดวันละ 2 ชม. × 365 วัน = <b class="text-black">730 ชม./ปี</b><br>
                             เท่ากับได้วันหยุดเพิ่ม <b class="text-lime-600">ฟรีๆ 1 เดือนเต็ม!</b>
@@ -501,8 +530,8 @@
                 <div class="bento-box border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] p-6 rounded-2xl bg-white h-full flex flex-col justify-between hover:-translate-y-1 transition-all duration-200" data-aos="fade-up" data-aos-delay="100">
 
                     <div>
-                        <h3 class="font-kanit font-bold text-2xl mb-3">Zero Friction</h3>
-                        <p class="font-kanit text-gray-600 font-light mb-4">
+                        <h3 class="font-kanit font-bold text-2xl mb-3" data-i18n="feature-2-title">Zero Friction</h3>
+                        <p class="font-kanit text-gray-600 font-light mb-4" data-i18n="feature-2-desc">
                             ผมเข้าใจครับว่าการเปลี่ยนแปลงวิธีการทำงานนั้นยากเสมอ ผมจึงออกแบบระบบให้เชื่อมต่อกับสิ่งที่ลูกเทรนคุ้นเคยอยู่แล้ว อย่าง LINE เพียงแค่ให้ลูกเทรนแอด ส่งรูปอาหารรายวัน ใช้ได้แล้ว!
                         </p>
                     </div>
@@ -513,8 +542,8 @@
                 <div class="bento-box border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] p-6 rounded-2xl bg-white h-full flex flex-col justify-between hover:-translate-y-1 transition-all duration-200" data-aos="fade-up" data-aos-delay="200">
 
                     <div>
-                        <h3 class="font-kanit font-bold text-2xl mb-3">พัฒนาลูกค้าตรงจุด</h3>
-                        <p class="font-kanit text-gray-600 font-light mb-4">
+                        <h3 class="font-kanit font-bold text-2xl mb-3" data-i18n="feature-3-title">พัฒนาลูกค้าตรงจุด</h3>
+                        <p class="font-kanit text-gray-600 font-light mb-4" data-i18n="feature-3-desc">
                             Dashboard ที่คอยบอกว่า ลูกเทรนของคุณกินโปรตีน ไขมัน คาร์บเป็นสัดส่วนเท่าไหร่ คุณก็จะสามารถให้คำแนะนำให้ลูกเทรนได้อย่างมีประสิทธิภาพกว่าเดิม
                         </p>
                     </div>
@@ -533,24 +562,24 @@
                 <!-- Left: Text Content -->
                 <div class="founder-card max-w-2xl mx-auto" data-aos="fade-up">
                     <!-- Story Text -->
-                    <h3 class="text-3xl font-bold text-black text-center mb-8">
+                    <h3 class="text-3xl font-bold text-black text-center mb-8" data-i18n="founder-title">
                         สวัสดีครับ ผมดิวเอง
                     </h3>
 
                     <div class="space-y-6 sm:space-y-8">
-                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
+                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left" data-i18n="founder-p1">
                             ผมสร้าง Coach Lee เพราะผมเป็นคนออกกำลังกาย <b>อยากมีกล้าม</b> แต่ไม่ค่อยได้ Track การกินของผม ทำให้ผมเพิ่มน้ำหนักได้ช้า และกล้ามขึ้นช้า
                         </p>
 
-                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
+                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left" data-i18n="founder-p2">
                             และผมเคยลองใช้ App tracking อาหารทั่วไปแล้ว มัน<b>ลำบากที่จะคอยกรอกข้อมูล</b>แต่ละอย่าง ผมเลยไม่ใช้ 😅
                         </p>
 
-                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
+                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left" data-i18n="founder-p3">
                             วันนึงผมได้ไปเรียนรู้เกี่ยวกับการทำ Automation ด้วย AI มาแล้วก็นึก<b>อยากลองทำโปรเจ็กเล่นๆ</b>เป็นของตัวเองเพื่อใช้เอง เพราะเห็นว่าเราน่าจะทำให้การเก็บข้อมูลการกินง่ายๆเพียงถ่ายรูปได้
                         </p>
 
-                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left">
+                        <p class="text-base sm:text-lg text-gray-700 leading-relaxed sm:leading-loose text-left" data-i18n="founder-p4">
                             แต่เมื่อผมเอาตัวโปรเจ็กเล่นๆของผมเอาไปลงเฟสบุคของผม <b>กลับมีคนให้ความสนใจอย่างมาก</b> ประกอบกับดิวเห็นโค้ชคนนึงในไอจีที่ต้องตอบไลน์ลูกเทรนดึกๆ ก็เลยคิดว่าถ้าเราทำระบบที่ช่วยโค้ชกับลูกเทรนได้น่าจะมีประโยชน์มากๆเลย จึงเป็นที่มาของ <span class="font-bold text-lime-600">โค้ชลี</span> ของเราครับ
                         </p>
                     </div>
@@ -574,7 +603,7 @@
     <!-- ============================================ -->
     <section class="py-20 sm:py-32 border-t-2 border-gray-300" style="background-color: rgba(255, 255, 255, 0.95)">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-black mb-16">
+            <h2 class="section-title text-black mb-16" data-i18n="video-title">
                 ดูการใช้งานจริง
             </h2>
 
@@ -582,8 +611,8 @@
             <div class="max-w-4xl mx-auto">
                 <div class="aspect-video bg-black border-4 border-black rounded-3xl shadow-[8px_8px_0px_0px_rgba(217,249,157,1)] flex items-center justify-center overflow-hidden">
                     <div class="text-center text-white px-4">
-                        <p class="text-xl sm:text-2xl font-bold font-kanit">รอสักครู่ค้าบ 🎬</p>
-                        <p class="text-sm sm:text-base mt-2 font-kanit">กำลังทำวิดิโออยู่ค้าบเดียวเอามาแปะ</p>
+                        <p class="text-xl sm:text-2xl font-bold font-kanit" data-i18n="video-waiting">รอสักครู่ค้าบ 🎬</p>
+                        <p class="text-sm sm:text-base mt-2 font-kanit" data-i18n="video-desc">กำลังทำวิดิโออยู่ค้าบเดียวเอามาแปะ</p>
                     </div>
                 </div>
             </div>
@@ -602,27 +631,30 @@
         
         <div class="mb-16">
 <div class="mb-24 sm:mb-16 transform -rotate-2 hover:rotate-0 transition-transform duration-300 inline-block">
-    <span class="bg-lime-400 text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl font-kanit font-black border-2 sm:border-4 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] sm:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.2)]">
+    <span class="bg-lime-400 text-black px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl font-kanit font-black border-2 sm:border-4 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] sm:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.2)]" data-i18n="pricing-badge">
         🚧 PRE-SALE : เปิดจองรุ่นบุกเบิก
     </span>
 </div>
             <h2 class="text-3xl md:text-5xl font-kanit font-bold text-white mb-6">
-                จองสิทธิ์ก่อน... ในราคาที่ <br class="hidden md:block">
-                <span class="text-lime-400">คนมาทีหลังจะไม่มีวันได้</span>
+                <span data-i18n="pricing-title-1">จองสิทธิ์ก่อน... ในราคาที่</span> <br class="hidden md:block">
+                <span class="text-lime-400" data-i18n="pricing-title-2">คนมาทีหลังจะไม่มีวันได้</span>
             </h2>
             <div class="space-y-4 max-w-3xl mx-auto">
-                <p class="text-gray-400 font-kanit font-light text-lg">
+                <p class="text-gray-400 font-kanit font-light text-lg" data-i18n="pricing-subtitle">
                     ระบบกำลังเข้าสู่ช่วงสุดท้ายของการพัฒนา (Finalizing)
                 </p>
                 <div class="bg-gradient-to-r from-lime-400/10 to-lime-300/10 border-2 border-lime-400 rounded-2xl px-6 py-5 space-y-3">
-                    <p class="text-xl md:text-2xl font-kanit font-bold text-white">
+                    <p class="text-xl md:text-2xl font-kanit font-bold text-white" data-i18n="pricing-presale">
                         🚀 เปิด Presale เฉพาะ 20 ท่านแรก
                     </p>
-                    <p class="text-lime-300 font-kanit font-bold text-lg">
+                    <p class="text-lime-300 font-kanit font-bold text-lg" data-i18n="pricing-deadline">
                         ⏰ จำกัดเวลา: ถึง 15 ธันวาคมนี้เท่านั้น
                     </p>
-                    <p class="text-gray-300 font-kanit text-base">
+                    <p class="text-gray-300 font-kanit text-base" data-i18n="pricing-lifetime">
                         ราคาพิเศษตลอดชีพ เฉพาะผู้เข้าร่วม Presale เท่านั้น
+                    </p>
+                    <p class="text-lime-200 font-kanit font-bold text-base" data-i18n="pricing-capacity">
+                        💪 ราคานี้ดูแลได้ถึง 50 ลูกเทรน
                     </p>
                 </div>
             </div>
@@ -633,15 +665,15 @@
 
             <div class="relative px-6 py-10 bg-neutral-900 ring-2 ring-lime-400/50 ring-dashed rounded-xl leading-none flex flex-col items-center text-center pt-12">
 
-                <span class="absolute -top-3 bg-neutral-900 text-lime-400 px-4 py-1 border border-lime-400/50 rounded-full text-xs font-bold uppercase tracking-widest font-kanit">
+                <span class="absolute -top-3 bg-neutral-900 text-lime-400 px-4 py-1 border border-lime-400/50 rounded-full text-xs font-bold uppercase tracking-widest font-kanit" data-i18n="pricing-limited-bonus">
                     Limited Bonus
                 </span>
 
-                <h3 class="text-xl md:text-2xl font-kanit font-bold text-white mb-4 mt-2">
+                <h3 class="text-xl md:text-2xl font-kanit font-bold text-white mb-4 mt-2" data-i18n="pricing-custom-title">
                     🛠️ ฟรี! ปรับแต่งฟีเจอร์ตามสั่ง <span class="text-lime-400">(Customization)</span>
                 </h3>
 
-                <p class="text-gray-400 font-kanit font-light text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+                <p class="text-gray-400 font-kanit font-light text-base md:text-lg max-w-3xl mx-auto leading-relaxed" data-i18n="pricing-custom-desc">
                     เนื่องจากระบบอยู่ในช่วงโค้งสุดท้ายของการพัฒนา... <br class="hidden md:block">
                     นี่คือสิทธิพิเศษสำหรับลูกค้า Pre-sale ที่จะได้ <b>"บอกปัญหา & รีเควสฟีเจอร์ที่อยากได้"</b> <br>
                     เพื่อให้ผมพัฒนาเวอร์ชัน Final ออกมาตอบโจทย์การทำงานของคุณที่สุด <br>
@@ -650,7 +682,7 @@
                     </span>
                 </p>
 
-                <span class="block text-xs text-gray-500 mt-4 font-kanit tracking-wide">
+                <span class="block text-xs text-gray-500 mt-4 font-kanit tracking-wide" data-i18n="pricing-limited-disclaimer">
                     (สิทธิพิเศษนี้สงวนสิทธิ์เฉพาะ 20 ท่านแรกเท่านั้น)
                 </span>
 
@@ -660,35 +692,35 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
 
             <div class="border border-neutral-800 bg-neutral-900/50 rounded-3xl p-8 hover:border-neutral-600 transition-all duration-300" data-aos="zoom-in" data-aos-delay="0">
-                <h3 class="text-gray-400 font-kanit text-xl mb-2">รายเดือน (Monthly)</h3>
+                <h3 class="text-gray-400 font-kanit text-xl mb-2" data-i18n="pricing-monthly">รายเดือน (Monthly)</h3>
                 <div class="flex items-baseline justify-center gap-2 mb-4">
-                    <span class="text-4xl md:text-5xl font-kanit font-bold text-white">฿990</span>
+                    <span class="text-4xl md:text-5xl font-kanit font-bold text-white" data-i18n="pricing-monthly-price">฿990</span>
                 </div>
-                <p class="text-sm text-gray-500 font-kanit">จ่ายสบายๆ ยกเลิกเมื่อไหร่ก็ได้</p>
+                <p class="text-sm text-gray-500 font-kanit" data-i18n="pricing-monthly-desc">จ่ายสบายๆ ยกเลิกเมื่อไหร่ก็ได้</p>
             </div>
 
             <div class="relative border-2 border-lime-400 bg-neutral-900 rounded-3xl p-8 transform md:scale-105 shadow-[0_0_30px_rgba(163,230,53,0.3)]" data-aos="zoom-in" data-aos-delay="100">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-lime-400 text-black px-4 py-1 rounded-full font-bold font-kanit text-sm">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-lime-400 text-black px-4 py-1 rounded-full font-bold font-kanit text-sm" data-i18n="pricing-yearly-badge">
                     🔥 คุ้มที่สุด (Save 20%)
                 </div>
 
-                <h3 class="text-lime-400 font-kanit text-2xl font-bold mb-2">รายปี (Yearly)</h3>
+                <h3 class="text-lime-400 font-kanit text-2xl font-bold mb-2" data-i18n="pricing-yearly">รายปี (Yearly)</h3>
                 <div class="flex items-baseline justify-center gap-2 mb-1">
-                    <span class="text-5xl md:text-6xl font-kanit font-black text-white">฿9,900</span>
+                    <span class="text-5xl md:text-6xl font-kanit font-black text-white" data-i18n="pricing-yearly-price">฿9,900</span>
                 </div>
-                <p class="text-lime-200/80 font-kanit text-sm mb-6">
+                <p class="text-lime-200/80 font-kanit text-sm mb-6" data-i18n="pricing-yearly-avg">
                     (เฉลี่ยเพียง 825.- ต่อเดือน)
                 </p>
 
                 <ul class="text-left text-gray-300 font-kanit space-y-3 text-sm md:text-base pl-4">
                     <li class="flex gap-2">
-                        <span class="text-lime-400">✓</span> ล็อกราคานี้ตลอดชีพ (ไม่ปรับขึ้น)
+                        <span class="text-lime-400">✓</span> <span data-i18n="pricing-yearly-benefit-1">ล็อกราคานี้ตลอดชีพ (ไม่ปรับขึ้น)</span>
                     </li>
                     <li class="flex gap-2">
-                        <span class="text-lime-400">✓</span> ฟรี! ค่า Setup ระบบ (มูลค่า 2,000.-)
+                        <span class="text-lime-400">✓</span> <span data-i18n="pricing-yearly-benefit-2">ฟรี! ค่า Setup ระบบ (มูลค่า 2,000.-)</span>
                     </li>
                     <li class="flex gap-2">
-                        <span class="text-lime-400">✓</span> ได้ใช้ฟีเจอร์ใหม่ก่อนใคร (Beta Access)
+                        <span class="text-lime-400">✓</span> <span data-i18n="pricing-yearly-benefit-3">ได้ใช้ฟีเจอร์ใหม่ก่อนใคร (Beta Access)</span>
                     </li>
                 </ul>
             </div>
@@ -697,13 +729,13 @@
 
         <!-- CTA Button (Outside pricing cards) -->
         <div class="flex justify-center mt-12">
-            <a href="https://www.facebook.com/profile.php?id=61583196487640" target="_blank" class="bg-lime-400 text-black px-8 py-4 rounded-xl font-kanit font-bold text-lg hover:bg-lime-300 hover:shadow-lg hover:shadow-lime-400/50 transition-all">
+            <a href="https://www.facebook.com/profile.php?id=61583196487640" target="_blank" class="bg-lime-400 text-black px-8 py-4 rounded-xl font-kanit font-bold text-lg hover:bg-lime-300 hover:shadow-lg hover:shadow-lime-400/50 transition-all" data-i18n="pricing-cta">
                 ติดต่อเรา Facebook Page
             </a>
         </div>
 
         <div class="mt-16 p-6 border-2 border-gray-700 rounded-2xl bg-neutral-900/50">
-            <p class="text-gray-300 font-kanit text-base md:text-lg leading-relaxed">
+            <p class="text-gray-300 font-kanit text-base md:text-lg leading-relaxed" data-i18n="pricing-notice">
                 <span class="text-lime-400 font-bold text-xl">*</span> ราคาจะปรับเป็น <span class="text-lime-400 font-bold text-xl">฿1,990.-/เดือน</span> ทันทีที่เปิดตัวอย่างเป็นทางการ (Official Launch)
             </p>
         </div>
@@ -715,7 +747,7 @@
     <!-- ============================================ -->
     <section class="py-20 sm:py-32" style="background-color: rgba(255, 255, 255, 0.95)">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-black mb-16">
+            <h2 class="section-title text-black mb-16" data-i18n="faq-title">
                 ถามมา ตอบไว
             </h2>
 
@@ -724,11 +756,11 @@
                 <!-- Q1 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>ลูกค้าต้องโหลดแอปเพิ่มไหม?</span>
+                        <span data-i18n="faq-q1">ลูกค้าต้องโหลดแอปเพิ่มไหม?</span>
                         <span class="text-xl font-bold">+</span>
                     </div>
                     <div class="accordion-content">
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed" data-i18n="faq-a1">
                             ไม่ต้องโหลดครับ ใช้ผ่านไลน์ได้เลย ลูกเทรนของคุณเพียงแค่แอด Coach Lee Bot ใน LINE แล้วส่งรูปอาหารที่ทานรายวันได้เลย ไม่มีความยุ่งยากเรื่องแอปพลิเคชันเพิ่มเติม
                         </p>
                     </div>
@@ -737,11 +769,11 @@
                 <!-- Q2 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>ถ้าลูกค้าลืมอัพโหลดอาหารจะทำยังไง?</span>
+                        <span data-i18n="faq-q2">ถ้าลูกค้าลืมอัพโหลดอาหารจะทำยังไง?</span>
                         <span class="text-xl font-bold">+</span>
                     </div>
                     <div class="accordion-content">
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed" data-i18n="faq-a2">
                             สามารถอัพโหลดรูปวันถัดมาก็ได้ เพราะแคลอรี่เป้าหมายก็จะทบจากเมื่อวานที่กินไม่ถึงเกณฑ์มา ระบบจะจดจำและสะสมไว้ เพื่อให้ลูกเทรนสามารถไม่กังวลเรื่องการลืมได้ ถ้าลืมก็ทำได้วันหลัง
                         </p>
                     </div>
@@ -750,11 +782,11 @@
                 <!-- Q3 -->
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <span>AI จะประเมินแคลอรี่ได้ถูกจริงๆหรอ?</span>
+                        <span data-i18n="faq-q3">AI จะประเมินแคลอรี่ได้ถูกจริงๆหรอ?</span>
                         <span class="text-xl font-bold">+</span>
                     </div>
                     <div class="accordion-content">
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed" data-i18n="faq-a3">
                             เราสั่งให้ AI ประมาณจากปริมาณอาหารจากรูป เช่นในจานนั้นมีผัก เนื้อสัตว์ ก็จะประเมินจากวัตถุดิบเลย แม้แต่อาหารพื้นบ้านก็ดูออก เพราะ AI ของเราได้รับการฝึกฝนให้รู้จักอาหารไทยทั่วไป อาหารภูมิศาสตร์ แล้วก็สามารถประเมินแคลอรี่ได้อย่างแม่นยำ
                         </p>
                     </div>
@@ -769,22 +801,22 @@
     <footer class="bg-black text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <!-- Main CTA -->
-            <h2 class="text-3xl sm:text-5xl font-bold mb-8 leading-tight">
+            <h2 class="text-3xl sm:text-5xl font-bold mb-8 leading-tight" data-i18n="footer-title">
                 พร้อมเอาเวลาไปพัฒนา<br/>อย่างอื่นหรือยัง?
             </h2>
 
-            <p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+            <p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto" data-i18n="footer-subtitle">
                 ตัดสินใจในวันนี้และเริ่มต้นการใช้งาน Coach Lee พร้อมได้รับส่วนลดพิเศษ Presale เพียง ฿990/เดือน
             </p>
 
             <!-- CTA Button (White) -->
-            <a href="https://www.facebook.com/profile.php?id=61583196487640" target="_blank" class="inline-block bg-white text-black border-3 border-white px-8 py-4 rounded-2xl font-bold text-xl mb-16 hover:bg-slate-100 transition-all shadow-[6px_6px_0px_0px_rgba(100,255,100,0.3)]">
+            <a href="https://www.facebook.com/profile.php?id=61583196487640" target="_blank" class="inline-block bg-white text-black border-3 border-white px-8 py-4 rounded-2xl font-bold text-xl mb-16 hover:bg-slate-100 transition-all shadow-[6px_6px_0px_0px_rgba(100,255,100,0.3)]" data-i18n="footer-cta">
                 เริ่มใช้งาน
             </a>
 
             <!-- Footer Links -->
             <div class="border-t border-gray-700 pt-12 mt-12">
-                <p class="text-gray-400 mb-4">
+                <p class="text-gray-400 mb-4" data-i18n="footer-copyright">
                     © 2024 Coach Lee. All rights reserved.
                 </p>
                 <p class="text-gray-500 text-sm">
@@ -805,6 +837,7 @@
     <script src="js/scripts.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/language-switcher.js"></script>
 
 </body>
 </html>
