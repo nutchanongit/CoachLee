@@ -7,8 +7,8 @@ const translations = {
         'nav-cta': 'ทักมาปรึกษาฟรีๆ',
 
         // Hero Section
-        'hero-title-1': 'ลดเวลางานแอดมิน วันละ 2 ชั่วโมง',
-        'hero-title-2': 'ให้คุณดูแลลูกค้า 50 คนได้ โดยไม่ต้องจ้างแอดมินเพิ่ม',
+        'hero-title-1': 'ลดเวลางานแอดมิน',
+        'hero-title-2': 'ดูแลลูกค้าได้มากขึ้น โดยไม่ต้องจ้างแอดมินเพิ่ม',
         'hero-subtitle': 'ระบบโค้ชลี คือระบบเก็บข้อมูลการกินของลูกเทรนด์เพียงแค่ลูกเทรนส่งรูปอาหาร ระบบจะเก็บ Data ลง Google Sheets พร้อมสร้าง Dashboard สรุปข้อมูลโภชนาการทีลูกเทรนทานอัตโนมัติ พร้อมทั้งช่วยลูกเทรนด์นับแคลอรี่ที่กินในแต่ละวันว่า ทานอาหาร ครบแล้ว หรือ ขาด ไปอีกเท่าไหร่',
 
         // Problem Section
@@ -129,8 +129,8 @@ const translations = {
         'nav-cta': 'Chat with Us',
 
         // Hero Section
-        'hero-title-1': 'Save 2 Hours Daily on Admin Work',
-        'hero-title-2': 'Manage 50 Clients Without Hiring Extra Staff',
+        'hero-title-1': 'Save Time on Admin Work',
+        'hero-title-2': 'Serve More Clients Without Hiring Extra Staff',
         'hero-subtitle': 'Coach Lee is an automated nutrition tracking system. Your trainees simply send food photos, and the system logs data to Google Sheets, creates automated nutrition dashboards, and helps trainees track daily calorie intake - whether they\'ve met or missed their goals.',
 
         // Problem Section
